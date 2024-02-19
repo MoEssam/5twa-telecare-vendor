@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "732074651138",
+    "firebase_url": "https://twa-telecare-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "twa-telecare",
+    "storage_bucket": "twa-telecare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732074651138:android:1b46011a3e990a4a35011b",
+        "android_client_info": {
+          "package_name": "com.care2home.Doctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeSzzVywB4BHzPOyUAeHPczBhRP1J9bys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732074651138:android:a6224f1285d3913f35011b",
+        "android_client_info": {
+          "package_name": "com.care2home.customer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeSzzVywB4BHzPOyUAeHPczBhRP1J9bys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732074651138:android:fcd93c8e87d9f5db35011b",
+        "android_client_info": {
+          "package_name": "com.care2home.partner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeSzzVywB4BHzPOyUAeHPczBhRP1J9bys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732074651138:android:5b733575eeabc45735011b",
+        "android_client_info": {
+          "package_name": "com.care2home.vendor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeSzzVywB4BHzPOyUAeHPczBhRP1J9bys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

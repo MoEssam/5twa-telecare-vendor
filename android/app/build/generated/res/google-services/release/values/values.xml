@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://twa-telecare-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">732074651138</string>
+    <string name="google_api_key" translatable="false">AIzaSyCeSzzVywB4BHzPOyUAeHPczBhRP1J9bys</string>
+    <string name="google_app_id" translatable="false">1:732074651138:android:5b733575eeabc45735011b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCeSzzVywB4BHzPOyUAeHPczBhRP1J9bys</string>
+    <string name="google_storage_bucket" translatable="false">twa-telecare.appspot.com</string>
+    <string name="project_id" translatable="false">twa-telecare</string>
+</resources>
