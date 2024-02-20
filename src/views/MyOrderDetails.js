@@ -51,7 +51,6 @@ const MyOrderDetails = () => {
     const unsubscribe = navigation.addListener("focus", async () => {
       await get_order_details();
       await get_online_boys();
-      console.log("boys moe are", boys);
     });
     return unsubscribe;
   }, []);
@@ -66,6 +65,7 @@ const MyOrderDetails = () => {
       .then(async (response) => {
         setLoading(false);
         setData(response.data.result);
+        console.log("order details", response.data.result.status_id);
       })
       .catch((error) => {
         setLoading(false);
@@ -77,6 +77,7 @@ const MyOrderDetails = () => {
     await axios({
       method: "post",
       url: api_url + boys_online,
+      data: { pharmacy_id: global.id },
     })
       .then(async (response) => {
         setLoading(false);
@@ -125,6 +126,7 @@ const MyOrderDetails = () => {
     })
       .then(async (response) => {
         setLoading(false);
+        change_status("reached_vendor");
         get_order_details();
       })
       .catch((error) => {
@@ -397,7 +399,7 @@ const MyOrderDetails = () => {
                 </TouchableOpacity>
               )}
             </View>
-            {data != undefined && data.status_id == 2 && (
+            {data != undefined && data.status_id == 2 && boys.length > 0 && (
               <Picker
                 selectedValue={selectedBoy}
                 style={styles.textField}
@@ -407,7 +409,7 @@ const MyOrderDetails = () => {
                 }
               >
                 <Picker.Item label="Select Delivery Boy" />
-                {boys !== undefined ? (
+                {boys !== undefined || boys.length > 0 ? (
                   boys.map((country, index) => (
                     <Picker.Item
                       label={country.delivery_boy_name}
@@ -416,7 +418,31 @@ const MyOrderDetails = () => {
                     /> //<== country name works fine without problems
                   ))
                 ) : (
-                  <Text>No available boys</Text>
+                  <TouchableOpacity
+                    style={{
+                      height: 40,
+                      position: "absolute",
+                      bottom: 10,
+                      width: "100%",
+                      backgroundColor: colors.theme_bg,
+                      padding: 10,
+                      alignItems: "center",
+                      justifyContent: "center",
+                      width: "90%",
+                      marginLeft: "5%",
+                      borderRadius: 10,
+                    }}
+                  >
+                    <Text
+                      style={{
+                        fontFamily: bold,
+                        color: colors.theme_fg_three,
+                        fontSize: 16,
+                      }}
+                    >
+                      No available boys
+                    </Text>
+                  </TouchableOpacity>
                 )}
                 {/* <Picker.Item style={{ fontSize:12, color:colors.theme_fg, fontFamily:regular }} value={itemValue} label="Select Delivery Boy" /> */}
               </Picker>
@@ -454,34 +480,67 @@ const MyOrderDetails = () => {
           </Text>
         </TouchableOpacity>
       )}
-      {data != undefined && data.status_id == 2 && data.items != null && (
-        <TouchableOpacity
-          onPress={assign_delivery_boy.bind(this, "reached_vendor")}
-          style={{
-            height: 40,
-            position: "absolute",
-            bottom: 10,
-            width: "100%",
-            backgroundColor: colors.theme_bg,
-            padding: 10,
-            alignItems: "center",
-            justifyContent: "center",
-            width: "90%",
-            marginLeft: "5%",
-            borderRadius: 10,
-          }}
-        >
-          <Text
+      {data != undefined &&
+        data.status_id == 2 &&
+        data.items != null &&
+        boys.length > 0 && (
+          <TouchableOpacity
+            onPress={assign_delivery_boy.bind(this, "reached_vendor")}
             style={{
-              fontFamily: bold,
-              color: colors.theme_fg_three,
-              fontSize: 16,
+              height: 40,
+              position: "absolute",
+              bottom: 10,
+              width: "100%",
+              backgroundColor: colors.theme_bg,
+              padding: 10,
+              alignItems: "center",
+              justifyContent: "center",
+              width: "90%",
+              marginLeft: "5%",
+              borderRadius: 10,
             }}
           >
-            Assign To Delivery Boy
-          </Text>
-        </TouchableOpacity>
-      )}
+            <Text
+              style={{
+                fontFamily: bold,
+                color: colors.theme_fg_three,
+                fontSize: 16,
+              }}
+            >
+              Assign To Delivery Boy
+            </Text>
+          </TouchableOpacity>
+        )}
+      {data != undefined &&
+        data.status_id == 2 &&
+        data.items != null &&
+        boys.length == 0 && (
+          <TouchableOpacity
+            style={{
+              height: 40,
+              position: "absolute",
+              bottom: 10,
+              width: "100%",
+              backgroundColor: colors.theme_bg,
+              padding: 10,
+              alignItems: "center",
+              justifyContent: "center",
+              width: "90%",
+              marginLeft: "5%",
+              borderRadius: 10,
+            }}
+          >
+            <Text
+              style={{
+                fontFamily: bold,
+                color: colors.theme_fg_three,
+                fontSize: 16,
+              }}
+            >
+              No available boys
+            </Text>
+          </TouchableOpacity>
+        )}
       <TouchableOpacity
         onPress={handleBackButtonClick}
         style={{ position: "absolute", top: 10, left: 10 }}

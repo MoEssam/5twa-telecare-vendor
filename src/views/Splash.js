@@ -77,6 +77,7 @@ const Splash = (props) => {
 
   const navigate = async () => {
     if (global.id) {
+      // console.log("Global is", global);
       navigation.dispatch(
         CommonActions.reset({
           index: 0,

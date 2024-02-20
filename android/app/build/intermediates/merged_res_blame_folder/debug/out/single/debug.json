@@ -4,10 +4,6 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_bn.png"
     },
     {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_eg.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_eg.png"
     },
@@ -66,10 +62,6 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
-    },
-    {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_mc.png.flat",
@@ -136,10 +128,6 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_pk.png"
     },
     {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_vi.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_vi.png"
     },
@@ -152,6 +140,10 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_yt.png"
     },
     {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_ma.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_ma.png"
     },
@@ -160,8 +152,12 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_tc.png"
     },
     {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_se.png.flat",
@@ -188,6 +184,10 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_cn.png"
     },
     {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_uy.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_uy.png"
     },
@@ -206,10 +206,6 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_np.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_np.png"
-    },
-    {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_ki.png.flat",
@@ -244,6 +240,10 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_md.png"
     },
     {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_ck.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_ck.png"
     },
@@ -258,6 +258,10 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_za.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_za.png"
+    },
+    {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_tn.png.flat",
@@ -282,10 +286,6 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_lr.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_lr.png"
-    },
-    {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\xml_network_security_config.xml.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\xml\\network_security_config.xml"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_re.png.flat",
@@ -314,6 +314,10 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_gm.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_gm.png"
+    },
+    {
+        "merged": "com.care2home.vendor.app-merged_res-40:/xml_network_security_config.xml.flat",
+        "source": "com.care2home.vendor.app-main-42:/xml/network_security_config.xml"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_tl.png.flat",
@@ -446,6 +450,10 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_dz.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_dz.png"
+    },
+    {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_src_assets_img_safety.png.flat",
@@ -740,10 +748,6 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_ve.png"
     },
     {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_pr.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_pr.png"
     },
@@ -758,10 +762,6 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_hu.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_hu.png"
-    },
-    {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_mz.png.flat",
@@ -828,10 +828,6 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_pe.png"
     },
     {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_src_assets_img_wallet_icon.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/src_assets_img_wallet_icon.png"
     },
@@ -862,10 +858,6 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_cv.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_cv.png"
-    },
-    {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_mx.png.flat",
@@ -964,6 +956,10 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_nz.png"
     },
     {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_gu.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_gu.png"
     },
@@ -988,6 +984,10 @@
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_sg.png"
     },
     {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_vu.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_vu.png"
     },
@@ -1006,10 +1006,6 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_mv.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_mv.png"
-    },
-    {
-        "merged": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\moham\\.gradle\\daemon\\7.4\\com.care2home.vendor.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_iq.png.flat",
@@ -1146,6 +1142,10 @@
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_mk.png.flat",
         "source": "com.care2home.vendor.app-main-42:/drawable-mdpi/node_modules_reactnativephoneinput_dist_resources_flags_images_mk.png"
+    },
+    {
+        "merged": "com.care2home.vendor.app-merged_res-40:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.care2home.vendor.app-main-42:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "com.care2home.vendor.app-merged_res-40:/drawable-mdpi_node_modules_reactnativephoneinput_dist_resources_flags_images_ro.png.flat",
