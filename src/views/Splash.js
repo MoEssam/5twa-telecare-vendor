@@ -27,7 +27,6 @@ const Splash = (props) => {
         await configure();
         await channel_create();
         await saveData(response.data.result);
-        console.log("response.data.result", response.data.result);
       })
       .catch((error) => {
         alert("Sorry something went wrong");
@@ -50,10 +49,10 @@ const Splash = (props) => {
       "address_update_status"
     );
 
-    global.currency = await data.default_currency;
+    // global.currency = await data.default_currency;
     global.delivery_charge_per_km = await data.delivery_charge_per_km;
     global.app_name = data.app_name;
-    global.currency_short_code = data.currency_short_code;
+    // global.currency_short_code = data.currency_short_code;
     global.user_type = data.user_type;
     global.mode = data.mode;
 

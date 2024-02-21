@@ -6,6 +6,7 @@ import {
   Text,
   TouchableOpacity,
   Image,
+  Linking,
 } from "react-native";
 import {
   bold,
@@ -42,6 +43,7 @@ const MyOrderDetails = () => {
     navigation.goBack();
   };
 
+  console.log("selectedBoy", selectedBoy);
   useEffect(() => {
     const onValueChange = database()
       .ref(`/pharm_orders/${id}`)
@@ -55,6 +57,13 @@ const MyOrderDetails = () => {
     return unsubscribe;
   }, []);
 
+  const goMap = (lat, lang) => {
+    const _destination = `${lat},${lang}`;
+    Linking.openURL(
+      `https://www.google.com/maps/dir/?api=1&destination=${_destination}&dir_action=navigate`
+    );
+  };
+
   const get_order_details = async () => {
     setLoading(true);
     await axios({
@@ -65,7 +74,7 @@ const MyOrderDetails = () => {
       .then(async (response) => {
         setLoading(false);
         setData(response.data.result);
-        console.log("order details", response.data.result.status_id);
+        console.log("order details", response.data.result);
       })
       .catch((error) => {
         setLoading(false);
@@ -399,54 +408,87 @@ const MyOrderDetails = () => {
                 </TouchableOpacity>
               )}
             </View>
-            {data != undefined && data.status_id == 2 && boys.length > 0 && (
-              <Picker
-                selectedValue={selectedBoy}
-                style={styles.textField}
-                dropdownIconColor={colors.theme_fg}
-                onValueChange={(itemValue, itemIndex) =>
-                  setSelectedBoy(itemValue)
-                }
-              >
-                <Picker.Item label="Select Delivery Boy" />
-                {boys !== undefined || boys.length > 0 ? (
-                  boys.map((country, index) => (
-                    <Picker.Item
-                      label={country.delivery_boy_name}
-                      value={country.id}
-                      key={index}
-                    /> //<== country name works fine without problems
-                  ))
-                ) : (
-                  <TouchableOpacity
-                    style={{
-                      height: 40,
-                      position: "absolute",
-                      bottom: 10,
-                      width: "100%",
-                      backgroundColor: colors.theme_bg,
-                      padding: 10,
-                      alignItems: "center",
-                      justifyContent: "center",
-                      width: "90%",
-                      marginLeft: "5%",
-                      borderRadius: 10,
-                    }}
-                  >
-                    <Text
+            {data.items != undefined &&
+              (data.status_id == 2 || data.status_id == 11) &&
+              boys.length > 0 && (
+                <Picker
+                  selectedValue={selectedBoy}
+                  style={styles.textField}
+                  dropdownIconColor={colors.theme_fg}
+                  onValueChange={(itemValue, itemIndex) =>
+                    setSelectedBoy(itemValue)
+                  }
+                >
+                  <Picker.Item label="Select Delivery Boy" />
+                  {boys !== undefined || boys.length > 0 ? (
+                    boys.map((country, index) => (
+                      <Picker.Item
+                        label={country.delivery_boy_name}
+                        value={country.id}
+                        key={index}
+                      /> //<== country name works fine without problems
+                    ))
+                  ) : (
+                    <TouchableOpacity
                       style={{
-                        fontFamily: bold,
-                        color: colors.theme_fg_three,
-                        fontSize: 16,
+                        height: 40,
+                        position: "absolute",
+                        bottom: 10,
+                        width: "100%",
+                        backgroundColor: colors.theme_bg,
+                        padding: 10,
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "90%",
+                        marginLeft: "5%",
+                        borderRadius: 10,
                       }}
                     >
-                      No available boys
-                    </Text>
-                  </TouchableOpacity>
-                )}
-                {/* <Picker.Item style={{ fontSize:12, color:colors.theme_fg, fontFamily:regular }} value={itemValue} label="Select Delivery Boy" /> */}
-              </Picker>
-            )}
+                      <Text
+                        style={{
+                          fontFamily: bold,
+                          color: colors.theme_fg_three,
+                          fontSize: 16,
+                        }}
+                      >
+                        No available boys
+                      </Text>
+                    </TouchableOpacity>
+                  )}
+                  {/* <Picker.Item style={{ fontSize:12, color:colors.theme_fg, fontFamily:regular }} value={itemValue} label="Select Delivery Boy" /> */}
+                </Picker>
+              )}
+            {data != undefined &&
+              (data.status_id == 2 || data.status_id == 11) &&
+              data.items != null &&
+              boys.length > 0 &&
+              selectedBoy !== undefined && (
+                <TouchableOpacity
+                  onPress={() => goMap(data.customer_lat, data.customer_lng)}
+                  style={{
+                    padding: 8,
+                    marginTop: 30,
+                    alignSelf: "center",
+                    width: "55%",
+                    marginLeft: "2%",
+                    marginRight: "2%",
+                    backgroundColor: colors.success,
+                    borderRadius: 5,
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <Text
+                    style={{
+                      fontFamily: regular,
+                      color: colors.theme_fg_three,
+                      fontSize: 14,
+                    }}
+                  >
+                    Customer Location
+                  </Text>
+                </TouchableOpacity>
+              )}
           </CardView>
           <View style={{ margin: 30 }} />
         </ScrollView>
@@ -481,9 +523,10 @@ const MyOrderDetails = () => {
         </TouchableOpacity>
       )}
       {data != undefined &&
-        data.status_id == 2 &&
+        (data.status_id == 2 || data.status_id == 11) &&
         data.items != null &&
-        boys.length > 0 && (
+        boys.length > 0 &&
+        selectedBoy !== undefined && (
           <TouchableOpacity
             onPress={assign_delivery_boy.bind(this, "reached_vendor")}
             style={{
@@ -511,7 +554,7 @@ const MyOrderDetails = () => {
             </Text>
           </TouchableOpacity>
         )}
-      {data != undefined &&
+      {/* {data != undefined &&
         data.status_id == 2 &&
         data.items != null &&
         boys.length == 0 && (
@@ -540,7 +583,8 @@ const MyOrderDetails = () => {
               No available boys
             </Text>
           </TouchableOpacity>
-        )}
+        )} */}
+
       <TouchableOpacity
         onPress={handleBackButtonClick}
         style={{ position: "absolute", top: 10, left: 10 }}

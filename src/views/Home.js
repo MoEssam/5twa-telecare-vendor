@@ -84,11 +84,13 @@ const Home = (props) => {
           response.data.result.address_update_status;
         global.document_approved_status =
           response.data.result.document_approved_status;
-        console.log(
-          response.data.result.document_approved_status +
-            "" +
-            response.data.result.address_update_status
-        );
+        global.currency_short_code = response.data.result.currency_short_code;
+        global.currency = response.data.result.currency_short_code;
+        // console.log(
+        //   response.data.result.document_approved_status +
+        //     "" +
+        //     response.data.result.address_update_status
+        // );
       })
       .catch((error) => {});
   };
@@ -107,8 +109,6 @@ const Home = (props) => {
         [{ text: "OK", onPress: () => console.log("OK Pressed") }]
       );
     }
-    console.log("api + url", api_url + dashboard);
-    console.log("id is ", global.id);
 
     await axios({
       method: "post",
